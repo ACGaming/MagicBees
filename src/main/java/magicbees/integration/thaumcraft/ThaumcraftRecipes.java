@@ -172,24 +172,24 @@ public class ThaumcraftRecipes {
     }
 
     private static void mbArcaneRecipes() {
-        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(MagicBees.modid, "thaumium_grafter"), new ShapedArcaneRecipe(
-                new ResourceLocation(""),
-                "MB_Grafter",
-                10,
-                new AspectList(),
-                thaumiumgrafter,
-                "SWS",
-                "STS",
-                " T ",
-                'S', "stickWood",
-                'W', "blockWool",
-                'T', "ingotThaumium"));
         ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(MagicBees.modid, "thaumium_scoop"), new ShapedArcaneRecipe(
                 new ResourceLocation(""),
                 "MB_Scoop",
                 10,
                 new AspectList(),
                 thaumiumScoop,
+                "SWS",
+                "STS",
+                " T ",
+                'S', "stickWood",
+                'W', "blockWool",
+                'T', "ingotThaumium"));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(MagicBees.modid, "thaumium_grafter"), new ShapedArcaneRecipe(
+                new ResourceLocation(""),
+                "MB_Grafter",
+                10,
+                new AspectList(),
+                thaumiumgrafter,
                 "  T",
                 " S ",
                 "S  ",
