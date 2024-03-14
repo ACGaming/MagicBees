@@ -8,6 +8,8 @@ import forestry.storage.BackpackDefinition;
 import magicbees.MagicBees;
 import magicbees.bees.EnumBeeModifiers;
 import magicbees.elec332.corerepack.item.ItemEnumBased;
+import magicbees.integration.thaumcraft.ItemThaumiumGrafter;
+import magicbees.integration.thaumcraft.ItemThaumiumScoop;
 import magicbees.item.*;
 import magicbees.item.types.*;
 import magicbees.util.MagicBeesResourceLocation;
@@ -43,6 +45,7 @@ public final class ItemRegister {
     public static ItemMagicBeesFrame magicFrame, resilientFrame, gentleFrame, metabolicFrame, necroticFrame, temporalFrame, oblivionFrame;
     public static Item moonDial, ironNugget;
     public static Item manasteelgrafter, manasteelScoop;
+    public static Item thaumiumgrafter, thaumiumScoop;
     public static ItemMysteriousMagnet mysteriousMagnet;
 
     public static ItemFood jellyBaby;
@@ -77,6 +80,9 @@ public final class ItemRegister {
         manasteelgrafter = new ItemManaSteelGrafter();
         manasteelScoop = new ItemManaSteelScoop();
 
+        thaumiumgrafter = new ItemThaumiumGrafter();
+        thaumiumScoop = new ItemThaumiumScoop();
+
         String backpackUid = "backpack.thaumaturge";
         BackpackDefinition def = new BackpackDefinition(new Color(0x8700C6), new Color(0xFFFFFF), tcBackpackFilter);
         BackpackManager.backpackInterface.registerBackpackDefinition(backpackUid, def);
@@ -109,6 +115,7 @@ public final class ItemRegister {
         event.getRegistry().registerAll(combItem, dropItem, pollenItem, propolisItem, waxItem, resourceItem, orePartItem);
         event.getRegistry().registerAll(mysteriousMagnet, moonDial);
         event.getRegistry().registerAll(manasteelgrafter, manasteelScoop);
+        event.getRegistry().registerAll(thaumiumgrafter, thaumiumScoop);
         event.getRegistry().registerAll(thaumaturgeBackpackT1, thaumaturgeBackpackT2);
         event.getRegistry().registerAll(jellyBaby);
         for (Item item : getBeeFrames().values()) {

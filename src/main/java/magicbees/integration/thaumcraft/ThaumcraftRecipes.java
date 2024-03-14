@@ -3,6 +3,8 @@ package magicbees.integration.thaumcraft;
 import com.google.common.base.Preconditions;
 import forestry.api.recipes.RecipeManagers;
 import forestry.apiculture.items.EnumPropolis;
+import magicbees.MagicBees;
+import magicbees.init.ItemRegister;
 import magicbees.item.types.EnumCombType;
 import magicbees.item.types.EnumPropolisType;
 import magicbees.item.types.EnumResourceType;
@@ -10,18 +12,25 @@ import magicbees.item.types.EnumWaxType;
 import magicbees.util.CentrifugeRecipe;
 import magicbees.util.MagicBeesResourceLocation;
 import magicbees.util.Utils;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.crafting.ShapelessRecipes;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.GameData;
+import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
+import thaumcraft.api.crafting.CrucibleRecipe;
+import thaumcraft.api.crafting.InfusionRecipe;
+import thaumcraft.api.crafting.ShapedArcaneRecipe;
+import thaumcraft.api.crafting.ShapelessArcaneRecipe;
 import thaumcraft.api.items.ItemsTC;
 import thaumcraft.common.items.resources.ItemCrystalEssence;
 
@@ -142,6 +151,9 @@ public class ThaumcraftRecipes {
     }
 
     private static void registerThaumcraftRecipes() {
+        mbCrucibleRecipes();
+        mbArcaneRecipes();
+        mbInfusionRecipes();
     }
 
     private static ItemStack getPropolis(EnumPropolisType propolis) {
@@ -152,5 +164,98 @@ public class ThaumcraftRecipes {
         return resourceItem.getStackFromType(resource);
     }
 
-
+    private static void mbArcaneRecipes() {
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(MagicBees.modid, "thaumium_grafter"), new ShapedArcaneRecipe(
+                new ResourceLocation(""),
+                "MB_Grafter",
+                10,
+                new AspectList(),
+                thaumiumgrafter,
+                "SWS",
+                "STS",
+                " T ",
+                'S', "stickWood",
+                'W', "blockWool",
+                'T', "ingotThaumium"));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(MagicBees.modid, "thaumium_scoop"), new ShapedArcaneRecipe(
+                new ResourceLocation(""),
+                "MB_Scoop",
+                10,
+                new AspectList(),
+                thaumiumScoop,
+                "  T",
+                " S ",
+                "S  ",
+                'S', "stickWood",
+                'T', "ingotThaumium"));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(MagicBees.modid, "essence_oblivion"), new ShapelessArcaneRecipe(
+                new ResourceLocation(""),
+                "MB_EssenceOblivion",
+                500,
+                new AspectList(),
+                getResource(EnumResourceType.ESSENCE_SCORNFUL_OBLIVION),
+                new Object[]{new ItemStack(Blocks.DRAGON_EGG),
+                getResource(EnumResourceType.DIMENSIONAL_SINGULARITY)}));
+        ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation(MagicBees.modid, "frame_magic"), new ShapedArcaneRecipe(
+                new ResourceLocation(""),
+                "MB_FrameMagic",
+                100,
+                new AspectList(),
+                new ItemStack(magicFrame),
+                "SSS",
+                "SFS",
+                "SSS",
+                'S', "stickWood",
+                'F', new ItemStack(ItemsTC.fabric)));
+    }
+    private static void mbCrucibleRecipes() {
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(MagicBees.modid, "essence_life"), new CrucibleRecipe(
+                "MB_EssenceLife",
+                getResource(EnumResourceType.ESSENCE_FALSE_LIFE),
+                new ItemStack(Blocks.RED_FLOWER),
+                new AspectList().add(Aspect.PLANT, 15).add(Aspect.EXCHANGE, 15)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(MagicBees.modid, "essence_unstable"), new CrucibleRecipe(
+                "MB_EssenceUnstable",
+                getResource(EnumResourceType.ESSENCE_FICKLE_PERMANENCE),
+                new ItemStack(Blocks.NETHERRACK),
+                new AspectList().add(Aspect.ENTROPY, 30).add(Aspect.EXCHANGE, 30)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(MagicBees.modid, "essence_time"), new CrucibleRecipe(
+                "MB_EssenceTime",
+                getResource(EnumResourceType.ESSENCE_LOST_TIME),
+                new ItemStack(Items.CLOCK),
+                new AspectList().add(Aspect.ORDER, 40).add(Aspect.VOID, 40).add(Aspect.TRAP, 40)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(MagicBees.modid, "essence_death"), new CrucibleRecipe(
+                "MB_EssenceDeath",
+                getResource(EnumResourceType.ESSENCE_SHALLOW_GRAVE),
+                new ItemStack(Items.ROTTEN_FLESH),
+                new AspectList().add(Aspect.ENTROPY, 15).add(Aspect.DEATH, 15)
+        ));
+        ThaumcraftApi.addCrucibleRecipe(new ResourceLocation(MagicBees.modid, "essence_armor"), new CrucibleRecipe(
+                "MB_EssenceArmor",
+                getResource(EnumResourceType.ESSENCE_EVERLASTING_DURABILITY),
+                new ItemStack(Items.LEATHER),
+                new AspectList().add(Aspect.EXCHANGE, 10).add(Aspect.PROTECT, 10)
+        ));
+    }
+    private static void mbInfusionRecipes() {
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(MagicBees.modid, "dimensional_singularity"), new InfusionRecipe(
+                "MB_DimensionalSingularity",
+                getResource(EnumResourceType.DIMENSIONAL_SINGULARITY),
+                2,
+                new AspectList().add(Aspect.ELDRITCH,20).add(Aspect.EXCHANGE, 40),
+                "blockGold",
+                new ItemStack(Items.ENDER_PEARL),
+                new ItemStack(Items.ENDER_PEARL)));
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation(MagicBees.modid, "dimensional_singularity"), new InfusionRecipe(
+                "MB_DimensionalSingularity",
+                getResource(EnumResourceType.DIMENSIONAL_SINGULARITY),
+                2,
+                new AspectList().add(Aspect.ELDRITCH,20).add(Aspect.EXCHANGE, 40),
+                "blockGold",
+                new ItemStack(Items.ENDER_PEARL),
+                new ItemStack(Items.ENDER_PEARL)));
+    }
 }
