@@ -22,23 +22,23 @@ misc.magnetActive=%s - 激活
 misc.magnetInactive=%s - 未激活
 
 #item.magicbees.
-item.magicbees.jellyBabies.name.name=胶糖娃娃
-item.magicbees.manasteelscoop.name.name=魔钢捕蜂网
-item.magicbees.thaumiumsooop.name.name=奥法捕蜂网
-item.magicbees.manasteelgrafter.name.name=魔钢剪枝器
-item.magicbees.thaumiumgrafter.name.name=奥法剪枝器
-item.magicbees.mysteriousmagnet.name.name=神秘磁铁
-item.magicbees.moondial.name.name=翡翠色月相盘
+item.magicbees.jelly_babies.name=胶糖娃娃
+item.magicbees.manasteelscoop.name=魔钢捕蜂网
+item.magicbees.thaumiumscoop.name=奥法捕蜂网
+item.magicbees.manasteelgrafter.name=魔钢剪枝器
+item.magicbees.thaumiumgrafter.name=奥法剪枝器
+item.magicbees.mysteriousmagnet.name=神秘磁铁
+item.magicbees.moondial.name=翡翠色月相盘
 
 #Tiles
-tile.effectJar.name=蜜蜂收集者的罐子
-tile.hive.curious.name=好奇蜂巢
-tile.hive.unusual.name=非凡蜂巢
-tile.hive.deep.name=深度蜂巢
-tile.hive.resonant.name=共鸣蜂巢
-tile.hive.infernal.name=地狱蜂巢
-tile.hive.oblivion.name=湮灭蜂巢
-tile.enchantedEarth.name=魔法泥土
+tile.magicbees.effectjar.name=蜜蜂收集者的罐子
+tile.magicbees.hiveblock.curious.name=好奇蜂巢
+tile.magicbees.hiveblock.unusual.name=非凡蜂巢
+tile.magicbees.hiveblock.deep.name=深度蜂巢
+tile.magicbees.hiveblock.resonant.name=共鸣蜂巢
+tile.magicbees.hiveblock.infernal.name=地狱蜂巢
+tile.magicbees.hiveblock.oblivion.name=湮灭蜂巢
+tile.magicbees.enchanted_earth.name=魔法泥土
 
 tile.magicApiary.name=魔法蜂箱
 tile.visAuraProvider.name=灵气蜂箱加速器
@@ -51,23 +51,23 @@ item.magicbees.beecomb.occult.name=神秘蜂窝
 item.magicbees.beecomb.otherworldly.name=异域蜂窝
 item.magicbees.beecomb.transmuted.name=蜕变蜂窝
 
-item.magicbees.beecomb.paper.name=纸质蜂窝
+item.magicbees.beecomb.papery.name=纸质蜂窝
 item.magicbees.beecomb.soul.name=灵魂蜂窝
 item.magicbees.beecomb.furtive.name=诡秘蜂窝
-item.magicbees.beecomb.aware.name=回忆蜂窝
-item.magicbees.beecomb.time.name=瞬息蜂窝
+item.magicbees.beecomb.intellect.name=回忆蜂窝
+item.magicbees.beecomb.temporal.name=瞬息蜂窝
 item.magicbees.beecomb.forgotten.name=遗忘蜂窝
 
-item.magicbees.beecomb.air.name=风之蜂窝
-item.magicbees.beecomb.fire.name=火之蜂窝
-item.magicbees.beecomb.water.name=水之蜂窝
-item.magicbees.beecomb.earth.name=地之蜂窝
-item.magicbees.beecomb.TCair.name=闪耀的风之蜂窝
-item.magicbees.beecomb.TCfire.name=闪耀的火之蜂窝
-item.magicbees.beecomb.TCwater.name=闪耀的水之蜂窝
-item.magicbees.beecomb.TCearth.name=闪耀的地之蜂窝
-item.magicbees.beecomb.TCorder.name=闪耀的秩序蜂窝
-item.magicbees.beecomb.TCchaos.name=闪耀的混沌蜂窝
+item.magicbees.beecomb.airy.name=风之蜂窝
+item.magicbees.beecomb.firey.name=火之蜂窝
+item.magicbees.beecomb.watery.name=水之蜂窝
+item.magicbees.beecomb.earthy.name=地之蜂窝
+item.magicbees.beecomb.tc_air.name=闪耀的风之蜂窝
+item.magicbees.beecomb.tc_fire.name=闪耀的火之蜂窝
+item.magicbees.beecomb.tc_water.name=闪耀的水之蜂窝
+item.magicbees.beecomb.tc_earth.name=闪耀的地之蜂窝
+item.magicbees.beecomb.tc_order.name=闪耀的秩序蜂窝
+item.magicbees.beecomb.tc_entropy.name=闪耀的混沌蜂窝
 item.magicbees.beecomb.essence.name=源质蜂窝
 item.magicbees.beecomb.potent.name=强力蜂窝
 item.magicbees.beecomb.te_carbon.name=碳素蜂窝
@@ -81,7 +81,7 @@ item.magicbees.wax.soul.name=灵魂蜜蜡
 item.magicbees.wax.amnesic.name=遗忘蜜蜡
 
 #Drop
-item.magicbees.drop.enchanting.name=蕴魔液滴
+item.magicbees.drop.enchanted.name=蕴魔液滴
 item.magicbees.drop.intellect.name=智慧液滴
 item.magicbees.drop.destabilized.name=不稳定液滴
 item.magicbees.drop.carbon.name=煤炭液滴
@@ -107,7 +107,7 @@ item.magicbees.propolis.air.name=和风蜂胶
 item.magicbees.propolis.fire.name=炽热蜂胶
 item.magicbees.propolis.water.name=奔流蜂胶
 item.magicbees.propolis.earth.name=石化蜂胶
-item.magicbees.propolis.chaos.name=混沌蜂胶
+item.magicbees.propolis.entropy.name=混沌蜂胶
 item.magicbees.propolis.unstable.name=不稳定蜂胶
 
 #Misc Resources
@@ -135,13 +135,13 @@ item.magicbees.resource.startNode.name=蜜蜂与魔法
 item.magicbees.resource.crystalAspect.name=晶化%s要素
 
 #Frames
-item.magicbees.frameMagic.name.name=魔力框架
-item.magicbees.frameResilient.name.name=弹力框架
-item.magicbees.frameGentle.name.name=柔性框架
-item.magicbees.frameMetabolic.name.name=代谢框架
-item.magicbees.frameNecrotic.name.name=坏死框架
-item.magicbees.frameTemporal.name.name=瞬息框架
-item.magicbees.frameOblivion.name.name=湮灭框架
+item.magicbees.frames.magic.name=魔力框架
+item.magicbees.frames.resilient.name=弹力框架
+item.magicbees.frames.gentle.name=柔性框架
+item.magicbees.frames.metabolic.name=代谢框架
+item.magicbees.frames.necrotic.name=坏死框架
+item.magicbees.frames.temporal.name=瞬息框架
+item.magicbees.frames.oblivion.name=湮灭框架
 
 #Frame tooltips
 magicbees.frame.modifier.production=产量
@@ -193,10 +193,11 @@ moon.crescentWaxing=凸娥眉月
 moon.new=新月
 
 #Backpack
-backpack.thaumaturge=神秘使背包
+item.backpack.thaumaturgeT1.name=神秘使背包
+item.backpack.thaumaturgeT2.name=神秘使编织背包
 
 #CTab
-item.magicbees.roup.magicBees.name=魔法蜜蜂
+itemGroup.magicbees=魔法蜜蜂
 
 #Botania flowers; Lexicon entries nearer the end.
 tile.botania:flower.beegonia.name=食蜂海棠
@@ -253,8 +254,8 @@ magicbees.speciesEthereal.description=幽灵般地，被来自天域的力量充
 
 magicbees.speciesWatery=水
 magicbees.speciesWatery.description=喜欢潮湿的地方和流动的水。|Apinomicon
-magicbees.speciesEarthen=土
-magicbees.speciesEarthen.description=他们与石头和泥土有强烈的联系。|Apinomicon
+magicbees.speciesEarthy=土
+magicbees.speciesEarthy.description=他们与石头和泥土有强烈的联系。|Apinomicon
 magicbees.speciesFirey=火
 magicbees.speciesFirey.description=在你无限接近于那闪动而不炽热的火焰时。|Apinomicon
 magicbees.speciesWindy=风
@@ -384,8 +385,8 @@ magicbees.speciesTCEarth=泥土
 magicbees.speciesTCEarth.description=“你绝对很想把它们挖出来，但是请注意，它们相当擅长打洞。”|MysteriousAges，喜剧学徒
 magicbees.speciesTCOrder=奇术
 magicbees.speciesTCOrder.description=它们有着臻于完美无瑕的蜂巢，其每个部分都是整体图案的镜像。|Apinomicon
-magicbees.speciesTCChaos=朴实
-magicbees.speciesTCChaos.description=它们的社会结构每天都在变化，这给它们带来了极强的灵活性和适应性， 但也使得它们变得难以捉摸。|Apinomicon
+magicbees.speciesTCEntropy=朴实
+magicbees.speciesTCEntropy.description=它们的社会结构每天都在变化，这给它们带来了极强的灵活性和适应性， 但也使得它们变得难以捉摸。|Apinomicon
 magicbees.speciesTCVis=魔力
 magicbees.speciesTCVis.description=“它们能感知到魔力的存在，却还不能影响到魔力。”|Azanor的研究笔记
 magicbees.speciesTCRejuvenating=复兴

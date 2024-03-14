@@ -69,7 +69,7 @@
         {
           "text": "tc.research_page.MB_FrameMagic.1",
           "recipes": [
-            "thaumcraft:magicframe"
+            "magicbees:magicframe"
           ]
         }
       ]

@@ -115,8 +115,8 @@ public class ModelHandler {
         setItemModelLocation(manasteelgrafter, createMRL("manasteel_grafter"));
         setItemModelLocation(manasteelScoop, createMRL("manasteel_scoop"));
 
-        setItemModelLocation(manasteelgrafter, createMRL("thaumium_grafter"));
-        setItemModelLocation(manasteelScoop, createMRL("thaumium_scoop"));
+        setItemModelLocation(thaumiumgrafter, createMRL("thaumium_grafter"));
+        setItemModelLocation(thaumiumScoop, createMRL("thaumium_scoop"));
 
         setItemModelLocation(jellyBaby, createMRL("jelly_babies"));
 
