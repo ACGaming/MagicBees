@@ -69,7 +69,7 @@
         {
           "text": "tc.research_page.MB_FrameMagic.1",
           "recipes": [
-            "magicbees:magicframe"
+            "magicbees:frame_magic"
           ]
         }
       ]
