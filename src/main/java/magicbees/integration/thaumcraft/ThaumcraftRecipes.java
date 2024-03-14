@@ -4,7 +4,6 @@ import com.google.common.base.Preconditions;
 import forestry.api.recipes.RecipeManagers;
 import forestry.apiculture.items.EnumPropolis;
 import magicbees.MagicBees;
-import magicbees.init.ItemRegister;
 import magicbees.item.types.EnumCombType;
 import magicbees.item.types.EnumPropolisType;
 import magicbees.item.types.EnumResourceType;
