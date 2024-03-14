@@ -1,9 +1,11 @@
 package magicbees.integration.thaumcraft;
 
 import forestry.api.arboriculture.IToolGrafter;
+import forestry.core.utils.Translator;
 import magicbees.MagicBees;
 import magicbees.util.MagicBeesResourceLocation;
 import magicbees.util.Utils;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -15,6 +17,7 @@ import thaumcraft.Thaumcraft;
 import thaumcraft.api.ThaumcraftMaterials;
 
 import javax.annotation.Nonnull;
+import java.util.List;
 
 public class ItemThaumiumGrafter extends Item implements IToolGrafter
 {
@@ -60,5 +63,13 @@ public class ItemThaumiumGrafter extends Item implements IToolGrafter
 	@Override
 	public float getSaplingModifier(@Nonnull ItemStack stack, @Nonnull World world, @Nonnull EntityPlayer player, @Nonnull BlockPos pos) {
 		return 100.0f;
+	}
+
+	@Override
+	public void addInformation(ItemStack stack, World playerIn, List<String> tooltip, ITooltipFlag advanced) {
+		super.addInformation(stack, playerIn, tooltip, advanced);
+		if (!stack.isItemDamaged()) {
+			tooltip.add(Translator.translateToLocalFormatted("item.for.uses", stack.getMaxDamage() + 1));
+		}
 	}
 }
