@@ -14,6 +14,7 @@ import magicbees.util.Utils;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumDyeColor;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.crafting.ShapelessRecipes;
@@ -145,8 +146,8 @@ public class ThaumcraftRecipes {
                 "sws", "aca", "sws",
                 'w', "blockWool",
                 's', "string",
-                'c', Blocks.CHEST,
-                'f', "gemAmber"
+                'c', Item.getItemFromBlock(Blocks.CHEST),
+                'a', "gemAmber"
         );
         RecipeManagers.carpenterManager.addRecipe(200, new FluidStack(FluidRegistry.WATER, 1000), ItemStack.EMPTY, new ItemStack(thaumaturgeBackpackT2),
                 "WXW", "WTW", "WWW",
