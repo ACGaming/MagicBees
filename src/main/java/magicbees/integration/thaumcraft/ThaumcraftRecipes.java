@@ -142,6 +142,13 @@ public class ThaumcraftRecipes {
     }
 
     private static void registerCarpenterRecipes() {
+        GameRegistry.addShapedRecipe(new MagicBeesResourceLocation("thaumium_backpack"), null, new ItemStack(thaumaturgeBackpackT1),
+                "sws", "aca", "sws",
+                'w', "blockWool",
+                's', "string",
+                'c', Blocks.CHEST,
+                'f', "gemAmber"
+        );
         RecipeManagers.carpenterManager.addRecipe(200, new FluidStack(FluidRegistry.WATER, 1000), ItemStack.EMPTY, new ItemStack(thaumaturgeBackpackT2),
                 "WXW", "WTW", "WWW",
                 'X', Items.DIAMOND,
